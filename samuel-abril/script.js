@@ -15,3 +15,14 @@ let puntosDobleDos = puntos.map(function(i) {
 });
 console.log({puntos,puntosDobleDos});
 
+//## Ejercicio 2: Lista de Nombres (map con objetos)
+//Inicias con una lista de usuarios:
+//`let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];`
+//
+//Tareas:
+//1.  Crea un nuevo arreglo `nombres` que contenga solo los nombres de los usuarios (ej: `["Ana", "Luis", "Carlos"]`).
+
+let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];
+let nombres = usuarios.map(usuarios => usuarios.nombre);
+console.log(nombres); //lo puedes usar como un objeto con un nuevo arreglo 
+console.log({usuarios,nombres});
