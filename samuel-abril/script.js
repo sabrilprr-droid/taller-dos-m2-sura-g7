@@ -49,3 +49,13 @@ let productos = [{nombre: "Camisa", stock: 10}, {nombre: "Zapatos", stock: 0}, {
 let enStock = productos.filter(productos => productos.stock > 0);
 console.log({productos,enStock});
 
+//## Ejercicio 5: Suma Total de Ventas (reduce)
+//Inicias con una lista de ventas del día:
+//`let ventas = [150, 300, 100, 50];`
+//
+//Tareas:
+//1.  Calcula el valor `totalVentas` sumando todos los elementos del arreglo usando `reduce`.
+
+let ventas = [150, 300, 100, 50];
+let totalVentas = ventas.reduce((totalHastaAhora,valorActual) => totalHastaAhora + valorActual,0); //se debe encapsular para que reduce reciba los dos parametro y se inicializa el acumulador en este caso en 0
+console.log({ventas,totalVentas});
