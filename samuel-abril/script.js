@@ -37,3 +37,15 @@ console.log({usuarios,nombres});
 let notas = [8, 5, 10, 3, 7];
 let aprobadas = notas.filter(e => e >= 6); // ingresar paremetros mas la funcion flecha para que funcione filter 
 console.log({notas,aprobadas});
+
+//## Ejercicio 4: Productos en Stock (filter con objetos)
+//Inicias con un inventario:
+//`let productos = [{nombre: "Camisa", stock: 10}, {nombre: "Zapatos", stock: 0}, {nombre: "Pantalón", stock: 5}];`
+//
+//Tareas:
+//1.  Crea un nuevo arreglo `enStock` que contenga solo los productos cuyo `stock` sea mayor que 0.
+
+let productos = [{nombre: "Camisa", stock: 10}, {nombre: "Zapatos", stock: 0}, {nombre: "Pantalón", stock: 5}];
+let enStock = productos.filter(productos => productos.stock > 0);
+console.log({productos,enStock});
+
