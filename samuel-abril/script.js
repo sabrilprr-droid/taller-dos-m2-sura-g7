@@ -59,3 +59,14 @@ console.log({productos,enStock});
 let ventas = [150, 300, 100, 50];
 let totalVentas = ventas.reduce((totalHastaAhora,valorActual) => totalHastaAhora + valorActual,0); //se debe encapsular para que reduce reciba los dos parametro y se inicializa el acumulador en este caso en 0
 console.log({ventas,totalVentas});
+
+//## Ejercicio 6: Aplanar un Arreglo (reduce)
+//Inicias con una lista de listas:
+//`let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];`
+//
+//Tareas:
+//1.  Crea un nuevo arreglo `listaPlana` que contenga todos los nombres en un solo nivel (ej: `["Ana", "Luis", "Maria", "Juan", "Pedro"]`). (Pista: `reduce` puede usar `concat`).
+
+let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
+let listaPlana = grupos.reduce((acumuladorNombres,valorActualNombres) => acumuladorNombres.concat(valorActualNombres),[]);
+console.log({grupos,listaPlana})
