@@ -84,3 +84,16 @@ let clon = original.slice();
 clon.push("D");  // recordar que es no mutable por ende siempre crea un clon del arreglo original y lo puedes usar como un arreglo con nuevo valor o editado 
 
 console.log({original,clon});
+
+//## Ejercicio 8: Obtener el Podio (slice)
+//Inicias con una lista de competidores:
+//`let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];`
+//
+//Tareas:
+//1.  Crea un nuevo arreglo `podio` que contenga solo los primeros 3 elementos (Oro, Plata, Bronce).
+
+let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];
+let podio = competidores.slice(0,3); // recuerda que slice recibe solo el dato inicio y dato final 
+
+console.log({competidores,podio});
+
