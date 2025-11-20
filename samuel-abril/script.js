@@ -111,3 +111,19 @@ let equipoCompleto = equipoQA.concat(equipoDev); // el que este entre el paramet
 
 console.log({equipoCompleto,equipoDev,equipoQA});
 
+//## Ejercicio 10: Añadir al Carrito (concat - Inmutable)
+//Inicias con un carrito de compras:
+//`let carrito = ["Manzana"];`
+//
+//Tareas:
+//1.  Crea un `nuevoCarrito` que contenga los elementos del `carrito` original más "Pera".
+//2.  Verifica que `carrito` original solo tiene "Manzana".
+
+let carrito = ["Manzana"];
+let nuevoCarrito = carrito.concat("Pera"); // ingresar el elemento en comillas 
+
+console.log({carrito,nuevoCarrito});
+
+
+
+
