@@ -70,3 +70,17 @@ console.log({ventas,totalVentas});
 let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
 let listaPlana = grupos.reduce((acumuladorNombres,valorActualNombres) => acumuladorNombres.concat(valorActualNombres),[]);
 console.log({grupos,listaPlana})
+
+//## Ejercicio 7: Crear una Copia (slice)
+//Inicias con un arreglo:
+//`let original = ["A", "B", "C"];`
+//
+//Tareas:
+//1.  Crea un `clon` exacto del arreglo `original` usando `slice()`.
+//2.  (Verificación) Modifica el `clon` (ej. `clon.push("D")`) y demuestra que `original` sigue intacto.
+
+let original = ["A", "B", "C"];
+let clon = original.slice();
+clon.push("D");  // recordar que es no mutable por ende siempre crea un clon del arreglo original y lo puedes usar como un arreglo con nuevo valor o editado 
+
+console.log({original,clon});
