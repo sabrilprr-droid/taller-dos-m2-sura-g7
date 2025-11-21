@@ -224,6 +224,18 @@ let nuevoTablero = tablero.map(function(valor,indice){
 
 console.log({tablero,nuevoTablero});
 
+//## Ejercicio 18: Combo (filter y map)
+//Inicias con una lista de productos:
+//`let productos = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {nombre: "Leche", precio: 3}];`
+//
+//Tareas:
+//1.  Crea un nuevo arreglo `productosCaros` que contenga solo los *nombres* de los productos que cuestan más de 4. (Resultado esperado: `["Carne"]`).
+//2.  (Pista: Encadena `filter` y luego `map`).
+
+let productoss = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {nombre: "Leche", precio: 3}];
+let productosCaros = productoss.filter(productoss => productoss.precio > 4 ).map(productoss => productoss.nombre);
+
+console.log({productoss,productosCaros});
 
 
 
