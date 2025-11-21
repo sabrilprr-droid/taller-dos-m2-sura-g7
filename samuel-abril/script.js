@@ -188,6 +188,19 @@ let nuevaFila = fila.filter((nombre)=> nombre != "Luis")
 
 console.log({fila,nuevaFila});
 
+//## Ejercicio 16: Insertar sin Mutar (slice + spread)
+//Inicias con la misma fila:
+//`let fila = ["Ana", "Luis", "Carlos", "Maria"];`
+//
+//Tareas:
+//1.  "Jorge" (nuevo) se cuela después de "Ana" (en el índice 1). Crea una `nuevaFilaConJorge` usando `slice` y el operador *spread* (`...`) para insertarlo.
+//2.  (Pista: `[...fila.slice(0, 1), "Jorge", ...fila.slice(1)]`)
+//3.  Verifica que `fila` original no tiene a "Jorge".
+
+let filas = ["Ana", "Luis", "Carlos", "Maria"];
+let nuevaFilaConJorge =[...filas.slice(0,1), "Jorge", ...filas.slice(1)]
+
+
 
 
 
