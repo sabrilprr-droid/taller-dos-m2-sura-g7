@@ -138,6 +138,18 @@ let siTieneEditor = roles.includes("EDITOR");
 
 console.log({roles,siTieneAdmin,siTieneEditor});
 
+//## Ejercicio 12: Encontrar Usuario (find)
+//Inicias con la lista de usuarios:
+//`let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];`
+//
+//Tareas:
+//1.  Encuentra el *objeto* completo del usuario cuyo `id` es 102. Guarda el resultado en `usuarioLuis`.
+
+let usuarioss = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+let usuarioLuis = usuarioss.find((usuarios) => usuarios.id === 102);
+console.log(usuarioss,usuarioLuis);
+
+
 
 
 
